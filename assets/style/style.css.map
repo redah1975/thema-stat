@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "sass/style.sass",
+        "sass/_colors.sass",
+        "sass/_global.sass",
+        "sass/_header.sass",
+        "sass/_elements.sass",
+        "sass/_card.sass",
+        "sass/_button.sass",
+        "sass/_sidebar.sass",
+        "sass/_footer.sass",
+        "sass/_modal.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
