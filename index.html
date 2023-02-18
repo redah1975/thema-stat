@@ -5,43 +5,225 @@
     <meta
       http-equiv="X-UA-Compatible"
       content="IE=edge"
-    />
+      />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-    />
+      />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/montserrat.css"
+      />
     <link
       rel="stylesheet"
       href="assets/style/bs.css"
-    />
+      />
     <link
       rel="stylesheet"
       href="assets/style/style.css"
-    />
+      />
     <title>Index Page</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
-
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="#">
+            <img
+              src="assets/img/logo.png"
+              alt="logo"
+              />
+          </a>
+          <button
+            id="btnClose"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="menu">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#">
+                  Займы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#">
+                  Кредитные карты
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#">
+                  Кредиты наличными
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#">
+                  Калькуляторы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#">
+                  Банки
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#">
+                  Журнал
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex me-lg-3 mt-3 mt-lg-0 align-items-center">
+              <button
+                class="btn btn-bw btn-loc"
+                data-bs-toggle="modal"
+                data-bs-target="#locations"
+                type="button">
+                <iconify-icon
+                  icon="ep:location"
+                  style="color: #585858"
+                  width="22"
+                  height="22"></iconify-icon>
+              </button>
+              <span class="location-main">Москва</span>
+            </div>
+            <div class="seacrh-main me-lg-3 mt-3 mt-lg-0 align-items-center">
+              <button
+                class="btn btn-bw btn-loc align-items-center btn-search"
+                style="font-size: 14px"
+                data-bs-toggle="modal"
+                data-bs-target="#search-modal"
+                id="search-main-btn">
+                <span></span>
+              </button>
+            </div>
+            <div class="header__contact ms-2 mt-4 mt-lg-0">
+              <a href="tel:7999999999"> 8 (800) 200-10-68 </a>
+              <a href="mailto:red@probanki-info.ru"> red@probanki-info.ru </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- /Header -->
     <!-- Main -->
     <main>
-
+      <section>
+        test
+      </section>
     </main>
     <!-- /Main -->
     <!-- Footer -->
-    <footer>
-        
-    </footer>
+    <footer></footer>
     <!-- /Footer -->
     <!-- Modal -->
-
+    <div
+      class="modal fade"
+      id="locations"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog location__block modal-dialog-centered
+        modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <p
+              class="modal-title fs-5"
+              id="exampleModalLabel">
+              Ваш город
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="location__form d-flex">
+              <div class="location__form__text">
+                Начните вводить название города или населенного пункта:
+              </div>
+              <form action="">
+                <input
+                  type="text"
+                  class="form-control"
+                  />
+              </form>
+            </div>
+            <div class="city">
+              <ul class="city__item">
+                <li class="d-flex city__main">
+                  A
+                  <ul class="city__subitem">
+                    <li>
+                      <a href=""> Абакан </a>
+                    </li>
+                    <li>
+                      <a href=""> Альметьевск </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="d-flex city__main">
+                  Б
+                  <ul class="city__subitem">
+                    <li>
+                      <a href=""> Балашиха </a>
+                    </li>
+                    <li>
+                      <a href=""> Барнаул </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-modal" id="search-block">
+      <div class="container search-modal__content">
+        <p>
+          Поиск по сайту:
+        </p>
+        <div class="row">
+          <form action="" class="d-flex">
+            <input type="text" class="form-control w-75 search-modal__inp" placeholder="Например, кредиты от Альфа Банка">
+            <button type="submit" class="btn search-modal__sub w-25 me-2 ms-2">
+              Найти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- /Modal -->
     <!-- JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/icons.js"></script>
     <!-- /JS -->
   </body>
 </html>

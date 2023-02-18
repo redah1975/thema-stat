@@ -1,0 +1,79 @@
+.location
+    &__block
+        max-width: 1110px
+    &__form
+        &__text
+            font-size: 14px
+            font-weight: 400
+            line-height: 17px
+            width: 25%
+        & form
+            padding-left: 40px
+            width: 75%
+        & form>input
+            background: $light-bg
+.modal-header
+    & p
+        font-size: 24px
+        font-weight: 700
+.city
+    margin-top: 40px
+    &__item
+        padding-left: 0
+    &__main
+        font-size: 20px
+    &__subitem
+        list-style: none
+        & li>a
+            color: $grey
+            font-size: 14px
+            text-decoration: none
+@media (max-width: 992px)
+    .location
+        &__form
+            flex-wrap: wrap
+            &__text
+                width: 100%
+            & form
+                margin-top: 10px
+                width: 100%
+                padding-left: 0
+/* Search block main */
+.search-modal
+    display: none
+    &__content
+        background: $white
+        padding: 30px
+        border-radius: 0 0 10px 10px
+.search-block-visible
+    display: block
+    width: 100%
+    height: 100vh
+    position: absolute
+    top: 94px
+    background: #00000086
+.search-modal
+    p
+        font-size: 18px
+        font-weight: 700
+    &__sub
+        background: $green
+        color: $white
+        &:hover
+            background: $green
+            color: $white
+    &__inp
+        border-color: $green
+@media (max-width: 992px)       
+    .search-block-visible
+        bottom: 0
+        top: 67%
+        z-index: 1250
+    .search-modal
+        p
+            font-size: 12px
+        &__inp
+            &::placeholder
+                font-size: 12px
+        &__content
+            padding: 30px 12px

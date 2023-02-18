@@ -1,0 +1,73 @@
+header
+    border: 1px solid #D9D9D9
+    border-width: 0 0 1px 0
+.navbar-toggler
+    border: none
+    padding: 0
+.navbar-toggler-icon
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" viewBox="0 0 24 24"%3E%3Cpath fill="%2300c566" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995ZM22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995Zm-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99h12.01Z"%2F%3E%3C%2Fsvg%3E')
+    width: 2em
+    height: 2em
+.nav-link
+    color: $black
+    font-weight: 600
+    font-size: 14px
+    &:hover
+        color: $green
+.navbar-brand
+    & img
+        max-width: 225px
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
+    color: $green
+    position: relative
+.header
+    &__contact
+        text-align: end
+        & a
+            font-size: 14px
+            font-weight: 600
+            color: $black
+            text-decoration: none
+            display: block
+            width: 100%
+            &:hover
+                text-decoration: none
+                color: $black
+.btn-search
+    & span:after
+        content: 'Поиск'
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="22" height="22" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="%23585858" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0Z"%2F%3E%3C%2Fsvg%3E')
+        background-repeat: no-repeat
+        width: 85px
+        height: 22px
+        display: flex
+        padding-left: 25px
+.form-visible
+    border-color: $orange !important
+    & span:after
+        content: 'Закрыть'
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="22" height="22" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="%23ff7a00" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144m224 0L144 368"%2F%3E%3C%2Fsvg%3E')
+        color: #FF7A00
+@media (min-width: 992.5px)
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
+        &:before
+            content: ''
+            display: inline-block
+            background: $green
+            width: 100%
+            height: 2px
+            position: absolute
+            top: 64px
+            left: 0
+            border-radius: 2px
+    .location-main
+        display: none
+@media (max-width: 992px)
+    .location-main
+        display: block
+        padding-left: 12px
+    .header
+        &__contact
+            text-align: start
+    .btn-search
+        z-index: 9999
