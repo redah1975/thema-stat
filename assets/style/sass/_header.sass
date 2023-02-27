@@ -1,6 +1,7 @@
 header
     border: 1px solid #D9D9D9
     border-width: 0 0 1px 0
+    background: $white
 .navbar-toggler
     border: none
     padding: 0
@@ -60,6 +61,7 @@ header
             top: 64px
             left: 0
             border-radius: 2px
+            transition: .3s
     .location-main
         display: none
 @media (max-width: 992px)
@@ -71,3 +73,15 @@ header
             text-align: start
     .btn-search
         z-index: 9999
+
+.nav-item
+    position: relative
+.dropdows-content
+    display: none
+    position: absolute
+    z-index: 9999
+    background: $white
+    width: 100%
+.nav-item:hover .dropdows-content
+    display: block
+    

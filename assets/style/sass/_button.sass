@@ -1,7 +1,47 @@
 .btn-bw
+  border: 1px solid $light-grey
+  &:hover
     border: 1px solid $light-grey
-    &:hover
-      border: 1px solid $light-grey  
 .btn-loc
-    display: flex
-    padding: 9px
+  display: flex
+  padding: 9px
+
+/* Wrapper toggle */
+.wrapped
+  &__togle
+    margin-left: 15px
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+    background: $white
+    border-radius: 5px
+    & button
+      display: flex
+      align-items: center
+@media (max-width: 992px)
+  .wrapped
+    &__togle
+      margin-left: 0
+/* Pagination section card */
+.btn-pagination
+  background: rgba(255, 122, 0, 0.1)
+  background-repeat: 5px
+  width: auto
+  color: $orange
+  padding: 12px 30px
+  font-size: 12px
+  font-weight: 600
+  &:hover
+    background: rgba(255, 122, 0, 0.1)
+    color: $orange
+/* pagination post */
+.btn-pagination-post
+  background: rgba(0, 197, 102, 0.1)
+  color: $green
+  font-size: 12px
+  font-weight: 600
+  text-align: center
+  width: 100%
+  padding: 14px
+  border-radius: 5px
+  text-decoration: none
+  &:hover
+    color: $green
